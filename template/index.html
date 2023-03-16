@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/responces.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7904bade72.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7904bade72.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+
+</head>
+
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <div class="header_navbar">
+                <div class="header_navbar-logo">
+                    <h1 class="header_navbar-logo-title "  font-family: fantasy;> Your Way </h1>
+                </div>
+                <div class="header_navbar-menu">
+                    <a href="#home" class="header_navbar-menu-link"><i class="fa-solid fa-house"></i> Home </a>
+                    <a href="#about" class="header_navbar-menu-link"><i class="fa-solid fa-circle-info"></i> About us </a>
+                    <a href="#reviews" class="header_navbar-menu-link"><i class="fa-solid fa-star"></i> Review </a>
+                </div>
+            </div>
+        </div>
+    </div> 
+<div class="container1">
+    <div class="row">
+        <div class="col">
+             <h1 id="home"> Your Way in Marrakech </h1>
+        </div>
+        <div class="col">
+            <div class="card card1" onclick="animation(this)">
+                 <h5> Hotel </h5>
+            </div>
+            <div class="card card2" onclick="animation(this)">
+                <h5> Restaurant </h5>
+            </div>
+            <div class="card card3" onclick="animation(this)">
+                 <h5> Place </h5>
+            </div>
+        </div>
+    </div>
+</div> 
+<section class="about"id="about">
+    <h1 id="about" class ="heading"> <span>About Us </span>  </h1>
+    <div class="row">
+        <div class ="video-container">
+            <video controls  src= "C:\Users\msi\Downloads\Chatbot v2 (8)\Chatbot-touristique-pour-la-ville-marrakech-main\chatboot.mp4">
+            </video>
+        </div>
+        <div class="content">
+           
+            <h3 >Why choose us ? </h3>
+            <p> Marrakech is a very touristic and attractive city, lots of places to visit that can make you upset, don't be afraid our Chatboot "urway" is there for that,
+                They will allow you to have access to answers 24 hours a day, 7 days a week. It can be used to provide information on local attractions, hotels, restaurants and other services. It can also be used to give directions, and more.
+               "Ur way" beautiful destinations is yours!
+            </p>
+        </div>
+    </div>
+  </section>
+    
+     
+         <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">
+            <img src="static/hi-robot.gif" width="40px" height="40px" style = "border-radius:80px; margin:0;padding:0px;">
+            <span style="font-size:14px;font-weight:bold; position:relative;bottom:20px;">IFM-Chatbot</span>
+            <span style="font-size:14px;font-weight:bold; position:relative;bottom:5px; left:-85px; color:green;">online</span>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h4 id="chat-timestamp"></h4>
+                            <p id="botStarterMessage" class="botText"><span class="botText">Hi I'm IFM Chatbot </span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="question" class="input-box" type="text" name="question"
+                                    placeholder="Enter message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon2" style="color: crimson;" class="fa fa-fw fa-heart"></i>
+                                <i id="chat-icon3" style="color: #333;" class="fa fa-fw fa-send"></i>
+                                <i id="mic" style="color: #333;" class="fa fa-fw fa-microphone"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+ 
+
+<section id="testimonials">
+    <div class="testimonial-heading">
+      <h2></h2>
+      <h2></h2>
+      <h2></h2>
+
+        <h1 id="reviews">Review</h1>
+    </div>
+    <div class="testimonial-box-container">
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img1">
+                    <h6>ufehhhhhhh</h6>
+                    
+                
+                    </div>
+                     <div class="name-user">
+                        <strong>Hassan bennani</strong>
+                        <span>@bennaihassan</span>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>j'ai vraiment apprécie votre chat boot  </p>
+            </div>
+        </div>
+        <!--BOX-2-------------->
+        <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img2">
+                        <h6>ufehhhhhhh</h6>
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>Mohemmed rabii</strong>
+                        <span>@rabiimohemmed</span>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-cojmment">
+                <p>avec vous les choses sont devenu plus facile !</p>
+            </div>
+        </div>
+        <!--BOX-3-------------->
+        <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img3">
+                        <h6>ufehhhhhhh</h6>
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>rkia youssfi </strong>
+                        <span>@Dyoussfirkia</span>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>c'est génial ce que vous faites !  </p>
+            </div>
+        </div>
+        <!--BOX-4-------------->
+        <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img4">
+                        <h6>ufehhhhhhh</h6>
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>aicha slimani</strong>
+                        <span>@slimaniaicha</span>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>c'est magnifique ce que vous faites ! j'ai adoré le chatboot</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+    </div>
+</section>
+<script>
+    // Text-to-speech functionality
+    function speak(text) {
+        if ('speechSynthesis' in window) {
+            var msg = new SpeechSynthesisUtterance();
+            msg.text = text;
+            window.speechSynthesis.speak(msg);
+        }
+    }
+
+    // Speech-to-text functionality
+ 
+    function startDictation() {
+
+  var recognition = new webkitSpeechRecognition();
+  var recognizing = false;
+
+  recognition.continuous = false;
+  recognition.interimResults = false;
+
+  recognition.onstart = function () {
+    recognizing = true;
+    document.getElementById("mic").classList.add("recording"); // Add recording class to mic icon
+    document.getElementById("question").value = "Recording..."; // Show "Recording..." in input box
+  };
+
+  recognition.onresult = function (event) {
+    var finalTranscript = "";
+    for (var i = event.resultIndex; i < event.results.length; i++) {
+      var transcript = event.results[i][0].transcript;
+      if (event.results[i].isFinal) {
+        finalTranscript += transcript;
+      }
+    }
+    document.getElementById("question").value = finalTranscript; // Show the transcribed text in input box
+    recognition.stop(); // Stop recording after 5 seconds
+    recognizing = false;
+    document.getElementById("mic").classList.remove("recording"); // Remove recording class from mic icon
+  };
+
+  setTimeout(function() {
+    if (recognizing) {
+      recognition.stop();
+      recognizing = false;
+      document.getElementById("mic").classList.remove("recording");
+      document.getElementById("question").value = "Could not recognize speech"; // Show "Could not recognize speech" in input box
+    }
+  }, 5000); // Stop recording after 5 seconds even if user hasn't stopped it manually
+
+  recognition.start();
+}
+
+</script>
+   
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
+<script src="static/scripts/jquery.min.js"></script>
+
+
+</html>
